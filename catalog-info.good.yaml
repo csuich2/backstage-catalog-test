@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-catalog-test-good
+spec:
+  type: library
+  lifecycle: experimental
+  owner: csuich2
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: monorepo-locations
+spec:
+  type: url
+  owner: csuich2
+  targets:
+    - ./pkg/foo/catalog-info.yaml

@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-catalog-test-blob
+spec:
+  type: library
+  lifecycle: experimental
+  owner: csuich2

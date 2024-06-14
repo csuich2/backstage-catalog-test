@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-catalog-test-bad
+spec:
+  type: library
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: monorepo-locations
+spec:
+  type: url
+  targets:
+    - ./pkg/blob/catalog-info.yaml
+    - ./pkg/foo/catalog-info.yaml
